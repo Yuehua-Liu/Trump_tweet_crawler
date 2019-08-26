@@ -55,7 +55,7 @@ if os.path.exists(check_log_file):
         msg = MIMEText(tweet.created_at.strftime("%b %d %Y - %H:%M:%S") + '\n' + tweet.text + '\n' + '點上方連結看全文')
         msg['Subject'] = '(注意)Trump 又再講幹話了！'
         msg['from'] = email_account
-        msg['To'] = 'ffang55tw@gmail.com'
+        msg['To'] = 'email'
 
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.ehlo()
